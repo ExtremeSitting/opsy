@@ -49,7 +49,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-node_modules/
 htmlcov/
 .tox/
 .coverage
@@ -78,3 +77,8 @@ target/
 
 #vim files
 *.swp
+
+#nodejs
+node_modules
+*hot-update.json
+*hot-update.js
