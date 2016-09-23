@@ -1,0 +1,10 @@
+#!/bin/bash
+rm -rf ./opsy_ui
+for uidir in `find . -type d -name 'ui' -not -path './opsy_ui/*'`; do
+    echo "FOUND $uidir"
+    MODULE=$(dirname $uidir)
+    UIPATH=$(basename $MODULE)
+    mkdir -p opsy_ui/$UIPATH
+    rsync -avP --delete-after --exclude=node_modules $uidir opsy_ui/$UIPATH
+done
+mv ./opsy_ui/opsy/ui/index.html ./opsy_ui/

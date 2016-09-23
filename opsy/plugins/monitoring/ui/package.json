@@ -1,0 +1,17 @@
+{
+  "name": "opsy-monitoring",
+  "version": "0.0.1",
+  "description": "ReactJS UI for Opsy Monitoring",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "author": "Opsy",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1"
+  }
+}
